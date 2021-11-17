@@ -7,7 +7,6 @@ def ZK_equality(G,H):
     r1 = Secret(utils.get_random_num(bits=128))
     r2 = Secret(utils.get_random_num(bits=128))
     zk_proof=0
-    print(r1,r2)
     #Generate a NIZK proving equality of the plaintexts
     m=1
     C1 = r1.value * G
